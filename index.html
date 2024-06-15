@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Aura - коллекция стикеров</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container flex">
+      <a class="header__logo logo" href="#">
+        <img src="img/logo.svg" alt="Логотип компании">
+        <img class="header__wallet" src="img/wallet.svg" alt="Изображение кнопки кошелька">
+      </a>
+      <div class="border-middle"></div>
+      <nav class="header__nav nav">
+        <ul class="nav-list list-reset flex">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Авторы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Коллекции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сервисы</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__btn btn" href="#">Кошелёк</a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__title title">Площадка для&nbsp;реализации криптостикеров</h1>
+          <div class="hero__buttons flex">
+            <a class="hero__button hero__button_fill btn" href="#">
+              <span class="hero__button-text">Купить</span>
+            </a>
+            <a class="hero__button hero__button_stroke btn" href="#">
+              <span class="hero__button-text">Стать автором</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="auction">
+      <div class="container">
+        <h2 class="auction__title title flex">
+          Аукцион
+          <span class="auction__state">Live auction</span>
+        </h2>
+        <div class="auction__content flex">
+          <div class="auction__img">
+            <img src="img/auction_big_sticker.png" alt="Стикер Witcher">
+          </div>
+          <div class="auction__info flex">
+            <div class="auction__owner auction-owner flex">
+              <img src="img/auction-owner__avatar.png" alt="Аватар претендента на стикер" class="auction-owner__avatar">
+              <span class="auction-owner__nickname">Serge_VM222</span>
+            </div>
+            <h3 class="auction__subtitle">Witcherrr_3 (xml_t5)</h3>
+            <div class="auction__action flex">
+              <div class="auction__bet flex">
+                <span class="auction__caption">Ставка:</span>
+                <span class="auction__price">0.10&nbsp;ETH</span>
+                <span class="auction__price-dollars">$351.24</span>
+              </div>
+              <div class="auction-timing flex">
+                <span class="auction__caption auction__caption_white">Окончание через:</span>
+                <div class="auction-timing__content flex">
+                  <div class="auction-timing__part flex">
+                    <span class="auction-timing__numbers">01</span>
+                    <span class="auction-timing__measure">Час</span>
+                  </div>
+                  <div class="auction-timing__part flex">
+                    <span class="auction-timing__numbers">48</span>
+                    <span class="auction-timing__measure">Мин</span>
+                  </div>
+                  <div class="auction-timing__part flex">
+                    <span class="auction-timing__numbers">47</span>
+                    <span class="auction-timing__measure">Сек</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="auction__info-btn btn btn_fill">
+              <span class="btn__text">Сделать ставку</span>
+            </button>
+          </div>
+        </div>
+        <div class="another-auctions">
+          <h3 class="another-auctions__title second-title">Другие аукционы</h3>
+          <ul class="another-auctions__list list-reset flex">
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-1.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-1.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">Frank.Nagval</span>
+                  </div>
+                  <span class="another-auctions__subtitle">Alien (green) e_e</span>
+                  <span class="another-auctions__price">0.02&nbsp;ETH</span>
+                  <span class="another-auctions__timing">03&nbsp;часа 25&nbsp;мин 23&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-2.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-2.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">CPH_777</span>
+                  </div>
+                  <span class="another-auctions__subtitle">CoBRRRa</span>
+                  <span class="another-auctions__price">0.5&nbsp;ETH</span>
+                  <span class="another-auctions__timing">15&nbsp;мин 03&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-3.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-3.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">sUpah_kiLLah</span>
+                  </div>
+                  <span class="another-auctions__subtitle">Diamonds (4)</span>
+                  <span class="another-auctions__price">0.008&nbsp;ETH</span>
+                  <span class="another-auctions__timing">23&nbsp;часа 05&nbsp;мин 08&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-4.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-4.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">ttgs</span>
+                  </div>
+                  <span class="another-auctions__subtitle">Holofobia-2</span>
+                  <span class="another-auctions__price">1.0&nbsp;ETH</span>
+                  <span class="another-auctions__timing">01&nbsp;час 15&nbsp;мин 55&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-5.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-5.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">Peppppe22</span>
+                  </div>
+                  <span class="another-auctions__subtitle">Baby Yoda 1</span>
+                  <span class="another-auctions__price">0.2&nbsp;ETH</span>
+                  <span class="another-auctions__timing">01&nbsp;час 28&nbsp;мин 11&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-6.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-6.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">1300e1440</span>
+                  </div>
+                  <span class="another-auctions__subtitle">alien vs. predator (01)</span>
+                  <span class="another-auctions__price">0.09&nbsp;ETH</span>
+                  <span class="another-auctions__timing">08&nbsp;часов 44&nbsp;мин 43&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-7.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-7.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">Robert_Wward</span>
+                  </div>
+                  <span class="another-auctions__subtitle">IAMDECEPTICON</span>
+                  <span class="another-auctions__price">0.1&nbsp;ETH</span>
+                  <span class="another-auctions__timing">55&nbsp;мин 18&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+            <li class="another-auctions__item">
+              <article class="another-auctions-prodict">
+                <div class="another-auctions__img flex">
+                  <img src="img/auction-8.png" alt="Изображение стикера для аукциона">
+                </div>
+                <div class="another-auctions__content flex">
+                  <div class="another-auctions__owner auction-owner flex">
+                    <img src="img/sticker-owner-8.png" alt="Аватар владельца стикера"
+                      class="another-auctions__owner-img">
+                    <span class="another-auctions__nickname">ttgs</span>
+                  </div>
+                  <span class="another-auctions__subtitle">Ghostbusterrrrrrrs</span>
+                  <span class="another-auctions__price">0.09&nbsp;ETH</span>
+                  <span class="another-auctions__timing">18&nbsp;мин 12&nbsp;сек</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="btn-center">
+            <button class="btn btn_stroke auction__more">Все аукционы</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new-stickers">
+      <div class="new-stickers-container container">
+        <h2 class="new-stickers__title title">Новые стикеры</h2>
+        <div class="new-stickers__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="new-stickers__items flex">
+                <picture class="new-sticker__img-1">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-1.png">
+                  <img src="img/new-sticker-1.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-2">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-2.png">
+                  <img src="img/new-sticker-2.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-3">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-3.png">
+                  <img src="img/new-sticker-3.png" alt="Изображение стикера">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new-stickers__items flex">
+                <picture class="new-sticker__img-4">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-4.png">
+                  <img src="img/new-sticker-4.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-5">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-5.png">
+                  <img src="img/new-sticker-5.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-3">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-3.png">
+                  <img src="img/new-sticker-3.png" alt="Изображение стикера">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new-stickers__items flex">
+                <picture class="new-sticker__img-6">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-6.png">
+                  <img src="img/new-sticker-6.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-7">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-7.png">
+                  <img src="img/new-sticker-7.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-8">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-8.png">
+                  <img src="img/new-sticker-8.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-4">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-4.png">
+                  <img src="img/new-sticker-4.png" alt="Изображение стикера">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new-stickers__items flex">
+                <picture class="new-sticker__img-9">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-9.png">
+                  <img src="img/new-sticker-9.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-5">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-5.png">
+                  <img src="img/new-sticker-5.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-6">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-6.png">
+                  <img src="img/new-sticker-6.png" alt="Изображение стикера">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide swipe-slide-mobile">
+              <div class="new-stickers__items flex">
+                <picture class="new-sticker__img-9">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-9.png">
+                  <img src="img/new-sticker-9.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-7">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-7.png">
+                  <img src="img/new-sticker-7.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-8">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-8.png">
+                  <img src="img/new-sticker-8.png" alt="Изображение стикера">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide swipe-slide-mobile">
+              <div class="new-stickers__items flex">
+                <picture class="new-sticker__img-9">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-9.png">
+                  <img src="img/new-sticker-9.png" alt="Изображение стикера">
+                </picture>
+                <picture class="new-sticker__img-mobile-9">
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-9.png">
+                  <img src="img/new-sticker-9.png" alt="Изображение стикера">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="new-stickers__pagination swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe-container container">
+        <h3 class="subscribe__title second-title">Будь в&nbsp;курсе новинок! Подпишись на&nbsp;рассылку!</h3>
+        <form action="#" class="subscribe-form form flex">
+          <input type="text" class="subscribe-form__input form-input form-input_dark" placeholder="Имя">
+          <input type="email" class="subscribe-form__input form-input form-input_dark" placeholder="E-mail"
+            name="email">
+          <button class="subscribe-form__btn btn_fill btn">
+            <span class="btn__text">Подписаться</span>
+          </button>
+          <label for="checkbox" class="checkbox">
+            <input class="checkbox__input" id="checkbox" type="checkbox" name="agreement">
+            <span class="checkbox__text">Согласен на&nbsp;обработку персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </section>
+    <section class="become-author">
+      <div class="container">
+        <div class="become-author__content flex">
+          <div class="become-author__text">
+            <h2 class="become-author__title title">Стать автором</h2>
+            <p class="become-author__description become-author__description-top">
+              <strong>Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать
+                к&nbsp;нам!</strong>
+            </p>
+            <p class="become-author__description become-author__description-bottom">
+              Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши свой ник в&nbsp;телеграме. Если наши
+              кураторы
+              решат, что нам по&nbsp;пути, то&nbsp;мы обязательно свяжемся с&nbsp;тобой и обговорим условия
+              сотрудничества! <b>Удачи!</b>
+            </p>
+            <img class="become-author__img" src="img/become-author.png" alt="" aria-hidden="true">
+          </div>
+          <form class="become-author__form-desktop form flex" method="get">
+            <label class="file flex">
+              <input class="file__input" type="file" accept="image/*">
+              <span class="file__icon flex">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.4081 16.5919H40V23.4081H23.4081V40H16.5919V23.4081H0V16.5919H16.5919V0H23.4081V16.5919Z"
+                    fill="#EDEDF2" />
+                </svg>
+              </span>
+              <span class="file__content">Прикрепить работы (.jpeg&nbsp;/ .png)</span>
+            </label>
+            <input class="form-input form-input_light" type="email" placeholder="@telegram_nickname"
+              name="telegram_nickname" required>
+            <button class="become-author__btn btn btn_fill">
+              <span class="btn__text">Отправить</span>
+            </button>
+          </form>
+          <div class="become-author__form-tablet">
+            <div class="become-author__bottom-tablet-img flex">
+              <img src="img/become-author-tablet-top.png" alt="" aria-hidden="true">
+              <img class="become-author-tablet-middle-img" src="img/become-author-tablet-middle.png" alt=""
+                aria-hidden="true">
+              <img class="become-author-tablet-bottom-img" src="img/become-author-tablet-bottom.png" alt=""
+                aria-hidden="true">
+            </div>
+            <form class="become-author__form form flex" method="get">
+              <label class="file flex">
+                <input class="file__input" type="file" accept="image/*">
+                <span class="file__icon flex">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.4081 16.5919H40V23.4081H23.4081V40H16.5919V23.4081H0V16.5919H16.5919V0H23.4081V16.5919Z"
+                      fill="#EDEDF2" />
+                  </svg>
+                </span>
+                <span class="file__content">Прикрепить работы (.jpeg&nbsp;/ .png)</span>
+              </label>
+              <input class="form-input form-input_light" type="email" placeholder="@telegram_nickname"
+                name="telegram_nickname" required>
+              <button class="become-author__btn btn btn_fill">
+                <span class="btn__text">Отправить</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="top-sales">
+      <div class="container">
+        <h2 class="top-sales__title title">Топ продаж</h2>
+        <ul class="top-sales__list list-reset flex">
+          <li class="top-sales__item">
+            <article class="top-product flex">
+              <div class="top-product__img-mobile">
+                <img src="img/top-product-mobile-1.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__img">
+                <img src="img/top-product-1.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__info flex">
+                <div class="top-product__owner auction-owner flex">
+                  <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
+                    alt="Изображение владельца стикера">
+                  <span class="top-pdoruct__owner-nickname">ttgs</span>
+                </div>
+                <h3 class="top-product__title">Holofobia1</h3>
+                <div class="top-product__sticker-price">
+                  <span class="top-pdroduct__sticker-price-ETH">4.70&nbsp;ETH</span>
+                  <span class="top-product__sticker-price-dollars">($16,873.47)</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="top-sales__item">
+            <article class="top-product flex">
+              <div class="top-product__img-mobile">
+                <img src="img/top-product-mobile-2.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__img">
+                <img src="img/top-product-2.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__info flex">
+                <div class="top-product__owner auction-owner flex">
+                  <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
+                    alt="Изображение владельца стикера">
+                  <span class="top-pdoruct__owner-nickname">Tat_2</span>
+                </div>
+                <h3 class="top-product__title">Y.EEE</h3>
+                <div class="top-product__sticker-price">
+                  <span class="top-pdroduct__sticker-price-ETH">3.00&nbsp;ETH</span>
+                  <span class="top-product__sticker-price-dollars">($10,731.24)</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="top-sales__item">
+            <article class="top-product flex">
+              <div class="top-product__img-mobile">
+                <img src="img/top-product-mobile-3.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__img">
+                <img src="img/top-product-3.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__info flex">
+                <div class="top-product__owner auction-owner flex">
+                  <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
+                    alt="Изображение владельца стикера">
+                  <span class="top-pdoruct__owner-nickname">Chris22</span>
+                </div>
+                <h3 class="top-product__title">Baby Joda</h3>
+                <div class="top-product__sticker-price">
+                  <span class="top-pdroduct__sticker-price-ETH">2.00&nbsp;ETH</span>
+                  <span class="top-product__sticker-price-dollars">($7,121.04)</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="top-sales__item">
+            <article class="top-product flex">
+              <div class="top-product__img-mobile">
+                <img src="img/top-product-mobile-4.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__img">
+                <img src="img/top-product-4.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__info flex">
+                <div class="top-product__owner auction-owner flex">
+                  <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
+                    alt="Изображение владельца стикера">
+                  <span class="top-pdoruct__owner-nickname">Oswaald</span>
+                </div>
+                <h3 class="top-product__title">Infinity_09</h3>
+                <div class="top-product__sticker-price">
+                  <span class="top-pdroduct__sticker-price-ETH">1.6109&nbsp;ETH</span>
+                  <span class="top-product__sticker-price-dollars">($5,762.32)</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="top-sales__item">
+            <article class="top-product flex">
+              <div class="top-product__img-mobile">
+                <img src="img/top-product-mobile-5.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__img">
+                <img src="img/top-product-5.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__info flex">
+                <div class="top-product__owner auction-owner flex">
+                  <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
+                    alt="Изображение владельца стикера">
+                  <span class="top-pdoruct__owner-nickname">Paul-22</span>
+                </div>
+                <h3 class="top-product__title">Sadsadsad</h3>
+                <div class="top-product__sticker-price">
+                  <span class="top-pdroduct__sticker-price-ETH">1.50&nbsp;ETH</span>
+                  <span class="top-product__sticker-price-dollars">($5,365.62)</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="top-sales__item">
+            <article class="top-product flex">
+              <div class="top-product__img-mobile">
+                <img src="img/top-product-mobile-6.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__img">
+                <img src="img/top-product-6.png" alt="Изображение стикера из топа продаж">
+              </div>
+              <div class="top-product__info flex">
+                <div class="top-product__owner auction-owner flex">
+                  <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
+                    alt="Изображение владельца стикера">
+                  <span class="top-pdoruct__owner-nickname">wardxxx</span>
+                </div>
+                <h3 class="top-product__title">Attntn</h3>
+                <div class="top-product__sticker-price">
+                  <span class="top-pdroduct__sticker-price-ETH">1.0&nbsp;ETH</span>
+                  <span class="top-product__sticker-price-dollars">($3,577.08)</span>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="top-info">
+      <div class="top-info__container container">
+        <h2 class="top-info__title">Для попадания в&nbsp;топ необходимо:</h2>
+        <ul class="top-info__list list-reset flex">
+          <li class="top-info__item" style="background-image: url('img/top-info-1.svg');">Минимум пять опубликованных
+            работ</li>
+          <li class="top-info__item" style="background-image: url('img/top-info-2.svg');">Инвайт трём коллегам
+            по&nbsp;цеху</li>
+          <li class="top-info__item" style="background-image: url('img/top-info-3.svg');">Верифицированный аккаунт</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="border-middle"></div>
+      <div class="footer__container container">
+        <a class="footer__logo logo" href="#">
+          <img src="img/logo.svg" alt="Логотип компании">
+        </a>
+        <ul class="nav-list list-reset flex">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Соглашение</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Лицензия</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__bottom-text">AURA<sup class="reg">&reg;</sup>&nbsp;| 2021</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
