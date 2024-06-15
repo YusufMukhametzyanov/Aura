@@ -126,10 +126,6 @@ body {
   opacity: 0;
 }
 
-.btn_fill:hover::before {
-  opacity: 0;
-}
-
 .btn_fill:active::after {
   background-color: var(--primary-active);
   opacity: 1;
@@ -143,10 +139,6 @@ body {
 }
 
 .btn_stroke:focus {
-  background-color: var(--primary);
-}
-
-.btn_stroke:hover {
   background-color: var(--primary);
 }
 
@@ -204,10 +196,6 @@ body {
   outline-offset: 6px;
 }
 
-.nav__link:hover {
-  color: var(--primary);
-}
-
 .nav__link:active {
   outline: none;
   color: var(--primary-active);
@@ -240,11 +228,6 @@ body {
 
 .header__btn:focus {
   border: 2px solid var(--primary-active);
-  color: var(--black);
-  background-color: var(--primary);
-}
-
-.header__btn:hover {
   color: var(--black);
   background-color: var(--primary);
 }
@@ -354,15 +337,6 @@ body {
 .hero__button:focus .hero__button-text {
   color: var(--black);
   background-color: transparent;
-}
-
-.hero__button:hover .hero__button-text {
-  color: var(--black);
-  background-color: transparent;
-}
-
-.hero__button_fill:hover::before {
-  opacity: 1;
 }
 
 .hero__button:active::after {
@@ -681,11 +655,6 @@ body {
   background-color: var(--red-secondary);
 }
 
-.swiper-pagination-bullet:hover {
-  border-color: var(--red-secondary);
-  background-color: var(--red-secondary);
-}
-
 .swiper-pagination-bullet:active {
   background-color: var(--red);
 }
@@ -863,14 +832,6 @@ body {
   fill: var(--primary);
 }
 
-.file:hover .file__icon {
-  border: 2px solid var(--primary);
-}
-
-.file:hover .file__icon path {
-  fill: var(--primary);
-}
-
 .file:active .file__icon {
   border: 2px solid var(--primary-active);
 }
@@ -1009,10 +970,6 @@ body {
 .footer__link:focus {
   outline: 2px solid var(--black);
   outline-offset: 4px;
-}
-
-.footer__link:hover {
-  opacity: 0.5;
 }
 
 .footer__link:active {

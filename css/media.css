@@ -1,3 +1,48 @@
+@media (hover: hover) {
+  .nav__link:hover {
+    color: var(--primary);
+  }
+
+  .btn_fill:hover::before {
+    opacity: 0;
+  }
+
+  .btn_stroke:hover {
+    background-color: var(--primary);
+  }
+
+  .header__btn:hover {
+    color: var(--black);
+    background-color: var(--primary);
+  }
+
+  .hero__button:hover .hero__button-text {
+    color: var(--black);
+    background-color: transparent;
+  }
+
+  .hero__button_fill:hover::before {
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet:hover {
+    border-color: var(--red-secondary);
+    background-color: var(--red-secondary);
+  }
+
+  .file:hover .file__icon {
+    border: 2px solid var(--primary);
+  }
+
+  .file:hover .file__icon path {
+    fill: var(--primary);
+  }
+
+  .footer__link:hover {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 1440px) {
   .hero {
     background-position: calc(100% + 400px) top;
@@ -279,6 +324,10 @@
 }
 
 @media (max-width: 578px) {
+  :root {
+    --gap: 16px;
+  }
+
   body {
     font-size: 16px;
   }
@@ -295,14 +344,37 @@
     padding: 15px 26px;
   }
 
+  .header {
+    padding: 17px 0 11px;
+  }
+
+  .header__logo {
+    padding-bottom: 17px;
+  }
+
+  .header__logo img:first-child {
+    width: 75px;
+  }
+
+  .header__nav {
+    padding-top: 11px;
+  }
+
+  .nav-list {
+    padding-top: 0;
+  }
+
   .hero {
+    padding: 63px 0 209px;
     background-image: url("../img/stickers_hero-mobile.png");
     background-position: bottom;
     background-repeat: repeat-x;
   }
 
   .hero__title {
+    margin-bottom: 16px;
     font-size: 35px;
+    line-height: 42px;
   }
 
   .hero__text {
@@ -310,11 +382,11 @@
   }
 
   .hero__button_fill {
-    padding: 17px 38px;
+    padding: 17px 40px 15px 38px;
   }
 
   .hero__button_stroke .hero__button-text {
-    padding: 12px 21px;
+    padding: 12px 22px 10px 21px;
   }
 
   .auction__state {
@@ -457,10 +529,6 @@
   .footer__logo {
     align-self: center;
     margin-bottom: 20px;
-  }
-
-  .nav-list {
-    padding-top: 10px;
   }
 
   .footer .border-middle {
