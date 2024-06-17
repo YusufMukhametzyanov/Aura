@@ -389,20 +389,70 @@
     padding: 12px 22px 10px 21px;
   }
 
+  .auction {
+    padding-top: 62px;
+  }
+
   .auction__state {
+    padding: 5px 12px;
     font-size: 12px;
+  }
+
+  .auction__title {
+    margin-bottom: 13px;
+  }
+
+  .auction-owner__avatar {
+    width: 24px;
+  }
+
+  .auction__content {
+    gap: 26px;
+  }
+
+  .auction__owner {
+    gap: 8px;
+    border-radius: 18px;
+  }
+
+  .auction-owner__nickname {
+    font-size: 16px;
+  }
+
+  .auction__info {
+    gap: 14px;
   }
 
   .auction__subtitle {
     font-size: 30px;
   }
 
+  .auction__bet {
+    padding: 15px 29px 14px 15px;
+    border-radius: 18px;
+  }
+
+  .auction__caption {
+    margin-bottom: 13px;
+  }
+
   .auction__price {
+    margin-bottom: 12px;
     font-size: 30px;
+  }
+
+  .auction-timing {
+    margin-bottom: 18px;
+    padding: 16px 19px 15px 18px;
+    border-radius: 18px;
   }
 
   .auction-timing__numbers {
     font-size: 30px;
+  }
+
+  .auction__info-btn {
+    padding: 16px 41px;
   }
 
   .another-auctions__subtitle {
@@ -489,6 +539,10 @@
     background-position: bottom;
   }
 
+  .form-input_dark {
+    width: 100%;
+  }
+
   .subscribe-form__btn {
     padding: 15px 50px;
   }
@@ -536,16 +590,6 @@
     top: 84px;
     width: 100%;
     background-color: black;
-  }
-}
-
-@media (max-width: 485px) {
-  .hero__title {
-    font-size: 35px;
-  }
-
-  .form-input_dark {
-    width: 100%;
   }
 }
 
