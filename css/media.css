@@ -455,7 +455,24 @@
     padding: 16px 41px;
   }
 
+  .another-auctions {
+    padding-top: 80px;
+  }
+
+  .another-auctions__item {
+    width: 100%;
+  }
+
+  .another-auctions__content {
+    padding: 16px 0 30.5px 16px;
+  }
+
+  .another-auctions__title {
+    margin-bottom: 33px;
+  }
+
   .another-auctions__subtitle {
+    margin-bottom: 9px;
     font-size: 20px;
   }
 
