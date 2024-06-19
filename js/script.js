@@ -10,3 +10,21 @@ const swiper = new Swiper(".new-stickers__slider", {
     },
   },
 });
+
+if (matchMedia) {
+  let matchMedia578px = window.matchMedia("(max-width: 578px)");
+  matchMedia578px.addListener(changes);
+  changes(matchMedia578px);
+}
+
+function changes(matchMedia578px) {
+  if (matchMedia578px.matches) {
+    var swiper = new Swiper(".another-auctions__swiper-wrapper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination-another",
+        clickable: true,
+      },
+    });
+  }
+}

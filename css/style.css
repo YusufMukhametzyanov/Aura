@@ -630,6 +630,10 @@ body {
   gap: 16px;
 }
 
+.another-auctions .another-auctions_swiper-pagination {
+  display: none;
+}
+
 .swiper-pagination-bullet {
   margin: 0 !important;
   padding: 10px 23px;
