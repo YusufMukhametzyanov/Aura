@@ -517,6 +517,26 @@
     display: inline;
   }
 
+  .new-stickers {
+    padding: 14px 0 63px;
+  }
+
+  .new-stickers__title {
+    margin-bottom: 14px;
+    padding-left: 32px;
+    letter-spacing: 0;
+    background-position: 1px 47%;
+    background-size: 22px;
+  }
+
+  .new-stickers__slider {
+    padding-bottom: 17px;
+  }
+
+  .new-stickers__items {
+    gap: 32px;
+  }
+
   .new-sticker__img-3 {
     display: none;
   }
@@ -574,7 +594,7 @@
   }
 
   .swiper-pagination-bullet {
-    padding: 8px 15px;
+    padding: 5px 10.8px;
     font-size: 12px;
   }
 
