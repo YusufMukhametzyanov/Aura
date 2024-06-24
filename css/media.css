@@ -518,7 +518,11 @@
   }
 
   .new-stickers {
-    padding: 14px 0 63px;
+    padding: 14px 0 64px;
+  }
+
+  .new-stickers__pagination {
+    gap: 12px;
   }
 
   .new-stickers__title {
@@ -594,12 +598,17 @@
   }
 
   .swiper-pagination-bullet {
-    padding: 5px 10.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 36px;
+    height: 28px;
     font-size: 12px;
   }
 
   .swiper-pagination-bullet:nth-last-child(-n + 2) {
-    display: inline-block;
+    display: flex;
   }
 
   .subscribe {
@@ -609,17 +618,69 @@
     background-position: bottom;
   }
 
+  .subscribe__title {
+    margin-bottom: 17px;
+    letter-spacing: 0;
+    line-height: 118%;
+  }
+
+  .form-input {
+    padding: 16px 32px;
+  }
+
   .form-input_dark {
     width: 100%;
   }
 
   .subscribe-form__btn {
-    padding: 15px 50px;
+    padding: 17px 50px;
+  }
+
+  .checkbox__text {
+    letter-spacing: 0;
   }
 
   .checkbox__text::before,
   .checkbox__text::after {
     top: 1.9px;
+  }
+
+  .become-author {
+    padding: 61px 0 81px;
+  }
+
+  .become-author__title {
+    margin-bottom: 0;
+    letter-spacing: 0;
+    line-height: 70px;
+  }
+
+  .become-author__description-top {
+    display: none;
+  }
+
+  .become-author__description-bottom {
+    margin-bottom: 15px;
+    line-height: 176%;
+  }
+
+  .file {
+    padding: 46px 0 50px;
+  }
+
+  .file__icon {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .file__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .become-author__form {
+    gap: var(--gap);
   }
 
   .become-author__text {
